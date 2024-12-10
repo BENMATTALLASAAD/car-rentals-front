@@ -1,0 +1,10 @@
+ul {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+ul.menu-closed {
+    max-height: 0;
+}
+ul.menu-open {
+    max-height: 200px; /* Adjust to your menu height */
+}

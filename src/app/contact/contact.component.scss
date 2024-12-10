@@ -1,0 +1,20 @@
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+  
+ /* When the section is visible */
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+// footer {
+//     background-color: #1a202c; /* Tailwind's bg-gray-900 */
+//     color: #d1d5db; /* Tailwind's text-gray-300 */
+//     padding: 1rem;
+//     text-align: center;
+//     font-size: 0.875rem; /* Tailwind's text-sm */
+// }

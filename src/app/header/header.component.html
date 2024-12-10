@@ -1,0 +1,23 @@
+<header class="bg-gray-900 text-white font-semibold">
+  <nav class="p-3 md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center text-2xl font-bold cursor:pointer py-4 px-6">
+      <div class="text-2xl font-bold">
+        <a href="#" class="hover:text-yellow-500">CarRentals</a>
+      </div>
+      
+      <button (click)="toggleMenu()" id="menu_button" class="md:hidden text-white-500 hover:text-yellow-500 focus:outline-none cursor:pointer ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path [attr.d]="isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16m-7 6h7'" id="menu_button_icon" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <ul [ngClass]="{ 'menu-open': !isMenuOpen, 'menu-closed': !isMenuOpen }" class="md:flex md:items-center  z-10 md:z-auto md:static absolute bg-gray-900 w-full left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+      <li class="mx-4 my-6 md:my-0"><a href="#home" class="hover:text-yellow-500">Home</a></li>
+      <li class="mx-4 my-6 md:my-0"><a href="#about" class="hover:text-yellow-500">About</a></li>
+      <li class="mx-4 my-6 md:my-0"><a href="#cars" class="hover:text-yellow-500">Cars</a></li>
+      <li class="mx-4 my-6 md:my-0"><a href="#services" class="hover:text-yellow-500">Services</a></li>
+      <li class="mx-4 my-6 md:my-0"><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+      <button class="mx-4 my-6 md:my-0 bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-medium hover:bg-yellow-400">Rent a Car</button>
+    </ul>
+  </nav>
+</header>

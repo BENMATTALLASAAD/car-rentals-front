@@ -1,0 +1,68 @@
+<section class="section bg-gray-100 py-12">
+    <div class="container mx-auto px-6">
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <h2 class="text-4xl font-bold text-gray-800">Contact Us</h2>
+        <p class="text-gray-600 mt-2">We'd love to hear from you! Reach out to us for bookings or inquiries.</p>
+      </div>
+  
+      <!-- Contact Form and Info -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Contact Form -->
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-semibold">Your Name</label>
+              <input type="text" id="name" class="w-full border border-gray-300 rounded-lg px-4 py-2" placeholder="Enter your name" />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-semibold">Email Address</label>
+              <input type="email" id="email" class="w-full border border-gray-300 rounded-lg px-4 py-2" placeholder="Enter your email" />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-semibold">Your Message</label>
+              <textarea id="message" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2" placeholder="Write your message here"></textarea>
+            </div>
+            <button class="w-full bg-yellow-500 text-white font-semibold py-2 rounded-lg hover:bg-yellow-600 transition">
+              Send Message
+            </button>
+          </form>
+        </div>
+  
+        <!-- Contact Details -->
+        <div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Get in Touch</h3>
+          <p class="text-gray-600 mb-4">
+            Feel free to reach out to us through any of the contact details below.
+          </p>
+          <ul class="text-gray-600 space-y-4">
+            <li>
+              <span class="font-bold">Phone:</span> +123 456 7890
+            </li>
+            <li>
+              <span class="font-bold">Email:</span> {{email}}
+            </li>
+            <li>
+              <span class="font-bold">Address:</span> 123 Main Street, City, Country
+            </li>
+          </ul>
+          <div class="mt-6">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509406!2d-122.4194156846815!3d37.774929779759996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858162f82b9c2f%3A0x0e0f634b4d6a1114!2sYour%20Car%20Rental%20Agency!5e0!3m2!1sen!2sus!4v1669971511632!5m2!1sen!2sus" 
+              width="100%" 
+              height="200" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</section>
+<footer class="bg-gray-900 text-gray-300 text-center py-4 mt-0 w-full">
+  <p class="text-sm">
+    &copy; {{ currentYear }} CarRentals. All Rights Reserved.
+  </p>
+</footer>
