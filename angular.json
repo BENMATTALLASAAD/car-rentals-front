@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/car-rentals-front/",
             "outputPath": "dist/car_rental_front",
             "index": "src/index.html",
             "main": "src/main.ts",
